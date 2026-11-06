@@ -1,0 +1,11 @@
+\begin{tabular}{lcccc}
+\toprule
+Model & RMSE (log) & MAE (log) & $R^2$ (log) & MAE (units) \\
+\midrule
+Global mean & 1.0011 & 0.8148 & 0.000 & 10.37 \\
+One-hot + ridge & 0.5521 & 0.4041 & 0.696 & 6.42 \\
+(b) Target encoding + GBM & 0.5834 & 0.4256 & 0.660 & 6.82 \\
+(c) Embedding NN & 0.5350 & 0.3829 & 0.714 & 6.26 \\
+(d) Embedding + TE NN & 0.5236 & 0.3670 & 0.726 & 6.11 \\
+\bottomrule
+\end{tabular}

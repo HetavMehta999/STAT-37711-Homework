@@ -1,0 +1,53 @@
+[rks] sigma=0.05   train MSE 0.0000  val MSE 6.9895
+[rks] sigma=0.1    train MSE 0.0000  val MSE 1.4668
+[rks] sigma=0.2    train MSE 0.0063  val MSE 1.9505
+[rks] sigma=0.3    train MSE 0.0149  val MSE 0.1064
+[rks] sigma=0.5    train MSE 0.0234  val MSE 0.0595
+[rks] sigma=0.75   train MSE 0.0272  val MSE 0.0494
+[rks] sigma=1.0    train MSE 0.0288  val MSE 0.0455
+[rks] sigma=1.5    train MSE 0.0298  val MSE 0.0403
+[rks] sigma=2.0    train MSE 0.0304  val MSE 0.0381
+[rks] sigma=3.0    train MSE 0.0320  val MSE 0.0369
+[rks] sigma=5.0    train MSE 0.0327  val MSE 0.0362
+[rks] sigma=10.0   train MSE 0.0357  val MSE 0.0372
+[mlp] d_hidden=   2  train MSE 0.9020  val MSE 0.8641 (+/- 0.8053)
+[mlp] d_hidden=   4  train MSE 0.2235  val MSE 0.2302 (+/- 0.0582)
+[mlp] d_hidden=   8  train MSE 0.1503  val MSE 0.1597 (+/- 0.0760)
+[mlp] d_hidden=  16  train MSE 0.0388  val MSE 0.0514 (+/- 0.0045)
+[mlp] d_hidden=  32  train MSE 0.0342  val MSE 0.0427 (+/- 0.0025)
+[mlp] d_hidden=  64  train MSE 0.0340  val MSE 0.0445 (+/- 0.0038)
+[mlp] d_hidden= 128  train MSE 0.0321  val MSE 0.0437 (+/- 0.0031)
+[mlp] d_hidden= 256  train MSE 0.0334  val MSE 0.0449 (+/- 0.0014)
+[mlp] d_hidden= 512  train MSE 0.0364  val MSE 0.0468 (+/- 0.0023)
+{
+  "rks": {
+    "sigma": 5.0,
+    "D": 1000,
+    "lambda": 0.001,
+    "train_mse": 0.032691212478827975,
+    "val_mse": 0.03615946662522579,
+    "val_mse_over_10_feature_seeds": [
+      0.03615946662522579,
+      0.036446810083243346,
+      0.03630498283779827,
+      0.03642967583836474,
+      0.036193341359313985,
+      0.036376395368268005,
+      0.03620046684607807,
+      0.03619053559997018,
+      0.036270848867875294,
+      0.036240812544354004
+    ]
+  },
+  "mlp": {
+    "d_hidden": 32,
+    "lr": 0.003,
+    "batch_size": 32,
+    "activation": "relu",
+    "epochs": 500,
+    "seed": 0,
+    "train_mse": 0.03333117936649151,
+    "val_mse": 0.04223268586337481
+  },
+  "baseline_predict_train_mean_val_mse": 2.396572045225377
+}

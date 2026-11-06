@@ -1,0 +1,12 @@
+\begin{tabular}{lccc|ccc}
+\toprule
+ & \multicolumn{3}{c|}{Regression, part (c)} & \multicolumn{3}{c}{$P(\text{trip}<45\text{ min})$, part (e)} \\
+Model & NLL & RMSE & MAE & Brier & Log-loss & Accuracy \\
+\midrule
+Constant base rate & -- & -- & -- & 0.00444 & 0.0286 & 0.9955 \\
+Constant Gaussian & 3.466 & 7.75 & 5.70 & 0.00446 & 0.0552 & 0.9955 \\
+Linear (heterosc.) & 3.405 & 7.61 & 5.60 & 0.00444 & 0.0421 & 0.9955 \\
+MLP, constant $\sigma$ & 2.714 & 3.65 & 2.31 & 0.00282 & 0.0253 & 0.9968 \\
+\textbf{MLP, $f_\mu$ and $f_\sigma$} & 2.622 & 3.77 & 2.40 & 0.00291 & 0.0177 & 0.9967 \\
+\bottomrule
+\end{tabular}

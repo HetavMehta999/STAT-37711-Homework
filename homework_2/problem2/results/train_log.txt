@@ -1,0 +1,115 @@
+{
+  "n_rows": 397924,
+  "cardinality": {
+    "StockCode": 3665,
+    "CustomerID": 4339
+  },
+  "one_hot_columns": 8004,
+  "dense_one_hot_gb_float32": 12.739934784,
+  "pair_cardinality_observed": 266802,
+  "pair_cardinality_possible": 15902435,
+  "rows_per_category_median": {
+    "StockCode": 49.0,
+    "CustomerID": 41.0
+  },
+  "categories_with_lt5_rows": {
+    "StockCode": 472,
+    "CustomerID": 228
+  },
+  "quantity_quantiles": {
+    "0.5": 6.0,
+    "0.9": 24.0,
+    "0.99": 120.0,
+    "0.999": 504.0,
+    "1.0": 80995.0
+  },
+  "split_sizes": {
+    "train": 278546,
+    "val": 59688,
+    "test": 59690
+  },
+  "test_rows_with_unseen": {
+    "StockCode": 0.0008879209247780197,
+    "CustomerID": 0.0003518177249120456
+  }
+}
+[emb] epoch   1  train MSE 1.1092  val MSE 0.7914
+[emb] epoch   2  train MSE 0.7215  val MSE 0.5870
+[emb] epoch   3  train MSE 0.5437  val MSE 0.4572
+[emb] epoch   4  train MSE 0.4455  val MSE 0.3843
+[emb] epoch   5  train MSE 0.3956  val MSE 0.3515
+[emb] epoch   6  train MSE 0.3731  val MSE 0.3299
+[emb] epoch   7  train MSE 0.3531  val MSE 0.3185
+[emb] epoch   8  train MSE 0.3438  val MSE 0.3141
+[emb] epoch   9  train MSE 0.3365  val MSE 0.3064
+[emb] epoch  10  train MSE 0.3297  val MSE 0.3032
+[emb] epoch  11  train MSE 0.3245  val MSE 0.3010
+[emb] epoch  12  train MSE 0.3208  val MSE 0.3015
+[emb] epoch  13  train MSE 0.3167  val MSE 0.2946
+[emb] epoch  14  train MSE 0.3144  val MSE 0.2937
+[emb] epoch  15  train MSE 0.3105  val MSE 0.2909
+[emb] epoch  16  train MSE 0.3086  val MSE 0.2931
+[emb] epoch  17  train MSE 0.3081  val MSE 0.2997
+[emb] epoch  18  train MSE 0.3077  val MSE 0.2898
+[emb] epoch  19  train MSE 0.3039  val MSE 0.2889
+[emb] epoch  20  train MSE 0.3016  val MSE 0.2869
+[emb] epoch  21  train MSE 0.2979  val MSE 0.2874
+[emb] epoch  22  train MSE 0.2973  val MSE 0.2908
+[emb] epoch  23  train MSE 0.2967  val MSE 0.2905
+[emb] epoch  24  train MSE 0.2941  val MSE 0.2883
+[emb+te] epoch   1  train MSE 0.6521  val MSE 0.3824
+[emb+te] epoch   2  train MSE 0.4082  val MSE 0.3585
+[emb+te] epoch   3  train MSE 0.3853  val MSE 0.3433
+[emb+te] epoch   4  train MSE 0.3679  val MSE 0.3403
+[emb+te] epoch   5  train MSE 0.3560  val MSE 0.3243
+[emb+te] epoch   6  train MSE 0.3469  val MSE 0.3604
+[emb+te] epoch   7  train MSE 0.3441  val MSE 0.3108
+[emb+te] epoch   8  train MSE 0.3315  val MSE 0.3094
+[emb+te] epoch   9  train MSE 0.3288  val MSE 0.3017
+[emb+te] epoch  10  train MSE 0.3187  val MSE 0.2961
+[emb+te] epoch  11  train MSE 0.3129  val MSE 0.2942
+[emb+te] epoch  12  train MSE 0.3096  val MSE 0.2915
+[emb+te] epoch  13  train MSE 0.3042  val MSE 0.2886
+[emb+te] epoch  14  train MSE 0.3015  val MSE 0.2966
+[emb+te] epoch  15  train MSE 0.2993  val MSE 0.2862
+[emb+te] epoch  16  train MSE 0.2966  val MSE 0.2835
+[emb+te] epoch  17  train MSE 0.2929  val MSE 0.2820
+[emb+te] epoch  18  train MSE 0.2910  val MSE 0.2814
+[emb+te] epoch  19  train MSE 0.2871  val MSE 0.2963
+[emb+te] epoch  20  train MSE 0.2870  val MSE 0.2810
+[emb+te] epoch  21  train MSE 0.2841  val MSE 0.2781
+[emb+te] epoch  22  train MSE 0.2823  val MSE 0.2980
+[emb+te] epoch  23  train MSE 0.2814  val MSE 0.2784
+[emb+te] epoch  24  train MSE 0.2781  val MSE 0.2774
+[emb+te] epoch  25  train MSE 0.2773  val MSE 0.2967
+[emb+te] epoch  26  train MSE 0.2776  val MSE 0.2767
+[emb+te] epoch  27  train MSE 0.2742  val MSE 0.2781
+[emb+te] epoch  28  train MSE 0.2717  val MSE 0.2766
+[emb+te] epoch  29  train MSE 0.2707  val MSE 0.2764
+[emb+te] epoch  30  train MSE 0.2697  val MSE 0.2815
+[emb+te] epoch  31  train MSE 0.2684  val MSE 0.2754
+[emb+te] epoch  32  train MSE 0.2662  val MSE 0.2746
+[emb+te] epoch  33  train MSE 0.2649  val MSE 0.2783
+[emb+te] epoch  34  train MSE 0.2647  val MSE 0.2966
+[emb+te] epoch  35  train MSE 0.2665  val MSE 0.2726
+[emb+te] epoch  36  train MSE 0.2602  val MSE 0.2727
+[emb+te] epoch  37  train MSE 0.2608  val MSE 0.2728
+[emb+te] epoch  38  train MSE 0.2585  val MSE 0.2726
+[emb+te] epoch  39  train MSE 0.2579  val MSE 0.2897
+
+Test metrics:
+                      rmse_log  mae_log  r2_log  mae_raw
+global_mean             1.0011   0.8148 -0.0000  10.3652
+one_hot_ridge           0.5521   0.4041  0.6958   6.4159
+te_gbm                  0.5834   0.4256  0.6604   6.8159
+embedding_nn            0.5350   0.3829  0.7144   6.2621
+embedding_plus_te_nn    0.5236   0.3670  0.7264   6.1063
+
+Test RMSE (log scale) by training frequency:
+                      unseen (0)     1-9   10-49  50-199    200+
+global_mean               1.3811  1.1157  0.9920  0.9749  1.0650
+one_hot_ridge             1.0016  0.5884  0.5341  0.5381  0.6065
+te_gbm                    1.0170  0.7848  0.5920  0.5543  0.6074
+embedding_nn              1.0580  0.5925  0.5206  0.5200  0.5821
+embedding_plus_te_nn      1.0759  0.6007  0.5153  0.5050  0.5679
+share_of_test             0.0012  0.0324  0.2641  0.5275  0.1748
