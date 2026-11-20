@@ -1,0 +1,50 @@
+n = 4898: train 3429, val 490, test 979
+RandomForest: 600 settings (validation set has 490 points)
+  [RandomForest] 100/600 settings  (8s)
+  [RandomForest] 200/600 settings  (18s)
+  [RandomForest] 300/600 settings  (30s)
+  [RandomForest] 400/600 settings  (49s)
+  [RandomForest] 500/600 settings  (75s)
+  [RandomForest] 600/600 settings  (112s)
+  done in 112s. best val 0.3281 -> test 0.3949  params {'n_estimators': 400, 'max_depth': None, 'max_features': 0.2, 'min_samples_leaf': 1}
+KNN: 900 settings (validation set has 490 points)
+  [KNN] 900/900 settings
+  done in 3s. best val 0.3595 -> test 0.4085  params {'n_neighbors': 19, 'weights': 'distance', 'p': 1, 'scaler': 'robust'}
+  [repeat] split 1/30: val=0.393 test=0.383
+  [repeat] split 2/30: val=0.399 test=0.403
+  [repeat] split 3/30: val=0.332 test=0.453
+  [repeat] split 4/30: val=0.419 test=0.382
+  [repeat] split 5/30: val=0.480 test=0.382
+  [repeat] split 6/30: val=0.367 test=0.399
+  [repeat] split 7/30: val=0.358 test=0.401
+  [repeat] split 8/30: val=0.351 test=0.390
+  [repeat] split 9/30: val=0.363 test=0.415
+  [repeat] split 10/30: val=0.417 test=0.397
+  [repeat] split 11/30: val=0.384 test=0.388
+  [repeat] split 12/30: val=0.385 test=0.390
+  [repeat] split 13/30: val=0.332 test=0.397
+  [repeat] split 14/30: val=0.385 test=0.419
+  [repeat] split 15/30: val=0.376 test=0.392
+  [repeat] split 16/30: val=0.309 test=0.365
+  [repeat] split 17/30: val=0.469 test=0.387
+  [repeat] split 18/30: val=0.337 test=0.423
+  [repeat] split 19/30: val=0.350 test=0.426
+  [repeat] split 20/30: val=0.344 test=0.402
+  [repeat] split 21/30: val=0.419 test=0.368
+  [repeat] split 22/30: val=0.397 test=0.409
+  [repeat] split 23/30: val=0.364 test=0.408
+  [repeat] split 24/30: val=0.439 test=0.425
+  [repeat] split 25/30: val=0.392 test=0.397
+  [repeat] split 26/30: val=0.379 test=0.448
+  [repeat] split 27/30: val=0.421 test=0.381
+  [repeat] split 28/30: val=0.408 test=0.439
+  [repeat] split 29/30: val=0.378 test=0.426
+  [repeat] split 30/30: val=0.359 test=0.360
+{
+  "baseline_constant": {
+    "train": 0.772319470564867,
+    "val": 0.7785146513603685,
+    "test": 0.8288480630984641
+  }
+}
+kNN repeated splits: mean val 0.3836, mean test 0.4018, test > val in 22/30
